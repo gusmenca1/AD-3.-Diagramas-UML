@@ -4,7 +4,7 @@
 Gustavo Mendoza camuñas
 Mi perfil de GitHub: https://github.com/gusmenca1
 ## Descripción del Proyecto
-Link al repositorio del proyecto: https://github.com/gusmenca1/torneo-esports-uml.git
+Link al repositorio del proyecto: https://github.com/gusmenca1/AD-3.-Diagramas-UML.git
  
 Este proyecto implementa un sistema de gestión de torneos deportivos
 utilizando UML para el modelado y Java para la implementación. La implementación en Java no se ha realizado, siguiendo las indicaciones del profesor.
