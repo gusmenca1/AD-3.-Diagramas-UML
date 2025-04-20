@@ -87,19 +87,19 @@ Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
 **⚖️ Razones del diseño elegido:**
 
-Claridad conceptual: cada clase representa una entidad real del dominio del problema.
+ - Claridad conceptual: cada clase representa una entidad real del dominio del problema.
 
-Bajo acoplamiento y alta cohesión: los objetos están bien encapsulados y especializados en su función.
+ - Bajo acoplamiento y alta cohesión: los objetos están bien encapsulados y especializados en su función.
 
-Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión de árbitros, fases de torneo, etc.
+ - Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión de árbitros, fases de torneo, etc.
 
-Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
+ - Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
 
 **🛠️ Tecnologías y herramientas aplicadas:**
 
-UML para el modelado de clases, casos de uso y relaciones.
+ - UML para el modelado de clases, casos de uso y relaciones.
 
-Git y GitHub para control de versiones.
+ - Git y GitHub para control de versiones.
 
 
 ## Conclusiones
