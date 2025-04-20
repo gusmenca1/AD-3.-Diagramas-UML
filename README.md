@@ -23,18 +23,19 @@ torneo-esports-uml/ ├── src/
 
 ## Justificación del diseño
 
-✅ Justificación del diseño del sistema de gestión de competiciones deportivas
+**✅ Justificación del diseño del sistema de gestión de competiciones deportivas**
 
-🎯 Objetivo del sistema:
+**🎯 Objetivo del sistema:**
 
 En primer lugar aclarar que me he permitido alejarme de la propuesta del enunciado y he dirigido el sistema hacia un diseño para gestionar competiciones deportivas, permitiendo el registro de equipos y jugadores, la creación de torneos, la inscripción de jugadores, la generación de partidos y la gestión de resultados.
 
-🧱 Organización general del modelo:
+**🧱 Organización general del modelo:**
 
 El diseño se basa en principios de modelado orientado a objetos, usando clases que representan entidades reales del ámbito deportivo (Torneo, Equipo, Jugador y Partido) y aplicando un enfoque modular y escalable.
 
-🔍 Estructura de clases y relaciones:
-**1. Torneo:
+**🔍 Estructura de clases y relaciones:**
+
+**1. Torneo:**
    
 Representa las diferentes competiciones.
 
@@ -44,7 +45,7 @@ Tiene una relación de composición con Partido (los partidos son generados dent
 
 Métodos como generarEmparejamientos() y asignarPremios() justifican esta lógica.
 
-**2. Equipo:
+**2. Equipo:**
    
 Clase que agrupa a los jugadores y participa en torneos.
 
@@ -52,13 +53,13 @@ Relación de agregación con Jugador: un equipo puede tener varios jugadores, y 
 
 Tiene métodos propios como registrarJugador() y estaInscrito() para encapsular su comportamiento.
 
-**3. Jugador:
+**3. Jugador:**
 
 Representa a un participante en el torneo. Asociado directamente a un Equipo.
 
 Incluye atributos como nombre, edad y métodos como estaInscrito() o asignarAEquipo().
 
-**4. Partido:
+**4. Partido:**
 
 Representa el emparejamiento entre dos equipos dentro de un torneo.
 
@@ -69,7 +70,8 @@ Contiene la lógica de resultado y estado (finalizado, pendiente, suspendido,...
 Podríamos haber considerado una relación de agregación entre Jugador y Partido, en caso de querer considerar información como alineaciones, estadísticas individuales, 
 pero con la intención de no complicar más el modelo nohemos considerado esta relación.
 
-🧩 Modelo DAO
+**🧩 Modelo DAO:**
+
 He utilizado el patrón DAO (Data Access Object) para separar la lógica de negocio de la lógica de acceso a datos:
 
 Cada entidad (Torneo, Equipo, Jugador, Partida) tiene:
@@ -82,7 +84,7 @@ Todos extienden de una interfaz genérica ICrudGenerico<E, ID>, lo que permite r
 
 Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
-⚖️ Razones del diseño elegido
+**⚖️ Razones del diseño elegido**
 Claridad conceptual: cada clase representa una entidad real del dominio del problema.
 
 Bajo acoplamiento y alta cohesión: los objetos están bien encapsulados y especializados en su función.
@@ -91,7 +93,7 @@ Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión d
 
 Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
 
-🛠️ Tecnologías y herramientas aplicadas
+**🛠️ Tecnologías y herramientas aplicadas**
 UML para el modelado de clases, casos de uso y relaciones.
 
 Git y GitHub para control de versiones.
