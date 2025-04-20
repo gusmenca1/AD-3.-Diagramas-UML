@@ -75,7 +75,7 @@ pero con la intención de no complicar más el modelo nohemos considerado esta r
 
 He utilizado el patrón DAO (Data Access Object) para separar la lógica de negocio de la lógica de acceso a datos:
 
-Cada entidad (Torneo, Equipo, Jugador, Partida) tiene:
+Cada entidad (Torneo, Equipo, Jugador, Partido) tiene:
 
  - Una interfaz DAO (ITorneoDao, etc.)
 
