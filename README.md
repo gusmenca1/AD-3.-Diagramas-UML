@@ -25,13 +25,15 @@ torneo-esports-uml/ ├── src/
 
 ✅ Justificación del diseño del sistema de gestión de competiciones deportivas
 
-🎯 Objetivo del sistema
+🎯 Objetivo del sistema:
+
 En primer lugar aclarar que me he permitido alejarme de la propuesta del enunciado y he dirigido el sistema hacia un diseño para gestionar competiciones deportivas, permitiendo el registro de equipos y jugadores, la creación de torneos, la inscripción de jugadores, la generación de partidos y la gestión de resultados.
 
-🧱 Organización general del modelo
+🧱 Organización general del modelo:
+
 El diseño se basa en principios de modelado orientado a objetos, usando clases que representan entidades reales del ámbito deportivo (Torneo, Equipo, Jugador y Partido) y aplicando un enfoque modular y escalable.
 
-🔍 Estructura de clases y relaciones
+🔍 Estructura de clases y relaciones:
 1. Torneo
 Representa las diferentes competiciones.
 
