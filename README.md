@@ -29,9 +29,11 @@ torneo-esports-uml/ ├── src/
 
 En primer lugar aclarar que me he permitido alejarme de la propuesta del enunciado y he dirigido el sistema hacia un diseño para gestionar competiciones deportivas, permitiendo el registro de equipos y jugadores, la creación de torneos, la inscripción de jugadores, la generación de partidos y la gestión de resultados.
 
+
 **🧱 Organización general del modelo:**
 
 El diseño se basa en principios de modelado orientado a objetos, usando clases que representan entidades reales del ámbito deportivo (Torneo, Equipo, Jugador y Partido) y aplicando un enfoque modular y escalable.
+
 
 **🔍 Estructura de clases y relaciones:**
 
@@ -71,6 +73,7 @@ Podríamos haber considerado una relación de agregación entre Jugador y Partid
 pero con la intención de no complicar más el modelo nohemos considerado esta relación.
 
 
+
 **🧩 Modelo DAO:**
 
 He utilizado el patrón DAO (Data Access Object) para separar la lógica de negocio de la lógica de acceso a datos:
@@ -85,6 +88,7 @@ Cada entidad (Torneo, Equipo, Jugador, Partido) tiene:
 
 Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
+
 **⚖️ Razones del diseño elegido:**
 
  - Claridad conceptual: cada clase representa una entidad real del dominio del problema.
@@ -94,12 +98,14 @@ Este modelo mejora la mantenibilidad y escalabilidad del sistema.
  - Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión de árbitros, fases de torneo, etc.
 
  - Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
+ - 
 
 **🛠️ Tecnologías y herramientas aplicadas:**
 
  - UML para el modelado de clases, casos de uso y relaciones.
 
  - Git y GitHub para control de versiones.
+ - 
 
 
 ## Conclusiones
