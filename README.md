@@ -110,4 +110,4 @@ Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
 ## Conclusiones
 
-Este diseño proporciona una base sólida para la gestión integral de torneos deportivos. Su estructura orientada a objetos, combinada con un enfoque DAO y un modelado claro en UML, garantiza un sistema robusto, extensible y fácil de mantener.
+Este diseño proporciona una base sólida para la gestión integral de torneos deportivos. Su estructura orientada a objetos, combinada con un enfoque DAO y un modelado claro en UML, garantiza un sistema robusto, extensible y fácil de mantener.  
