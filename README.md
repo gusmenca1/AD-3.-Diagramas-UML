@@ -34,7 +34,8 @@ En primer lugar aclarar que me he permitido alejarme de la propuesta del enuncia
 El diseño se basa en principios de modelado orientado a objetos, usando clases que representan entidades reales del ámbito deportivo (Torneo, Equipo, Jugador y Partido) y aplicando un enfoque modular y escalable.
 
 🔍 Estructura de clases y relaciones:
-1. Torneo
+**1. Torneo:
+   
 Representa las diferentes competiciones.
 
 Tiene una relación de agregación con Equipo (un torneo puede tener varios equipos, pero no es imprescindible inscribir equipos para crear una competición).
@@ -43,19 +44,22 @@ Tiene una relación de composición con Partido (los partidos son generados dent
 
 Métodos como generarEmparejamientos() y asignarPremios() justifican esta lógica.
 
-2. Equipo
+**2. Equipo:
+   
 Clase que agrupa a los jugadores y participa en torneos.
 
 Relación de agregación con Jugador: un equipo puede tener varios jugadores, y estos pueden existir fuera del equipo y ser cambiado a otro equipo, por ejemplo.
 
 Tiene métodos propios como registrarJugador() y estaInscrito() para encapsular su comportamiento.
 
-3. Jugador
+**3. Jugador:
+
 Representa a un participante en el torneo. Asociado directamente a un Equipo.
 
 Incluye atributos como nombre, edad y métodos como estaInscrito() o asignarAEquipo().
 
-4. Partido
+**4. Partido:
+
 Representa el emparejamiento entre dos equipos dentro de un torneo.
 
 Cada Partido tiene referencias a equipo1, equipo2 y al Torneo al que pertenece.
