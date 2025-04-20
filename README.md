@@ -85,7 +85,8 @@ Cada entidad (Torneo, Equipo, Jugador, Partido) tiene:
 
 Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
-**⚖️ Razones del diseño elegido**
+**⚖️ Razones del diseño elegido:**
+
 Claridad conceptual: cada clase representa una entidad real del dominio del problema.
 
 Bajo acoplamiento y alta cohesión: los objetos están bien encapsulados y especializados en su función.
@@ -94,7 +95,8 @@ Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión d
 
 Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
 
-**🛠️ Tecnologías y herramientas aplicadas**
+**🛠️ Tecnologías y herramientas aplicadas:**
+
 UML para el modelado de clases, casos de uso y relaciones.
 
 Git y GitHub para control de versiones.
