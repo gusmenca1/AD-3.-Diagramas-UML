@@ -98,14 +98,14 @@ Este modelo mejora la mantenibilidad y escalabilidad del sistema.
  - Escalabilidad: el diseño permite añadir nuevas funcionalidades como gestión de árbitros, fases de torneo, etc.
 
  - Facilidad de mantenimiento: la separación entre lógica de negocio y acceso a datos permite trabajar en capas.
- - 
+   
 
 **🛠️ Tecnologías y herramientas aplicadas:**
 
  - UML para el modelado de clases, casos de uso y relaciones.
 
  - Git y GitHub para control de versiones.
- - 
+   
 
 
 ## Conclusiones
