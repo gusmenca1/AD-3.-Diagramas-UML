@@ -70,17 +70,18 @@ Contiene la lógica de resultado y estado (finalizado, pendiente, suspendido,...
 Podríamos haber considerado una relación de agregación entre Jugador y Partido, en caso de querer considerar información como alineaciones, estadísticas individuales, 
 pero con la intención de no complicar más el modelo nohemos considerado esta relación.
 
+
 **🧩 Modelo DAO:**
 
 He utilizado el patrón DAO (Data Access Object) para separar la lógica de negocio de la lógica de acceso a datos:
 
 Cada entidad (Torneo, Equipo, Jugador, Partida) tiene:
 
-Una interfaz DAO (ITorneoDao, etc.)
+ - Una interfaz DAO (ITorneoDao, etc.)
 
-Una clase de implementación (TorneoDaoImpl)
+ - Una clase de implementación (TorneoDaoImpl)
 
-Todos extienden de una interfaz genérica ICrudGenerico<E, ID>, lo que permite reutilizar métodos estándar como insertOne, findById, delete, etc.
+ - Todos extienden de una interfaz genérica ICrudGenerico<E, ID>, lo que permite reutilizar métodos estándar como insertOne, findById, delete, etc.
 
 Este modelo mejora la mantenibilidad y escalabilidad del sistema.
 
